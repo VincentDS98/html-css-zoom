@@ -44,6 +44,23 @@ MAIN
 main {
     height: calc(100vh - 140px);
 }
+.camere {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.camere > div {
+    
+    margin: 5px;
+    
+}
+.camere > div img {
+    display: block;
+    height: 100px;
+    
+}
 
 /*
 FOOTER
@@ -85,5 +102,15 @@ DEBUG
 
 .debug main {
     background-color: lightcoral;
+}
+
+.debug main .camere {
+    background-color: aqua;
+}
+.debug main .camere > div {
+    
+    
+    background-color: red;
+    border: 2px dashed yellow;
 }
 
